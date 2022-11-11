@@ -1,0 +1,68 @@
+{
+    "_id": "networkFirewall",
+    "hostEnabled": true,
+    "hostRules": [],
+    "containerEnabled": true,
+    "containerRules": [
+        {
+            "name": "monitoring",
+            "previousName": "",
+            "id": 1,
+            "src": 1,
+            "dst": 1,
+            "ports": [
+                {
+                    "start": 1,
+                    "end": 65535,
+                    "deny": false
+                }
+            ],
+            "effect": "alert"
+        }
+    ],
+    "networkEntities": [
+        {
+            "_id": 1,
+            "name": "ALL_images",
+            "type": "container",
+            "collections": [
+                {
+                    "hosts": [
+                        "*"
+                    ],
+                    "images": [
+                        "*"
+                    ],
+                    "labels": [
+                        "*"
+                    ],
+                    "containers": [
+                        "*"
+                    ],
+                    "functions": [
+                        "*"
+                    ],
+                    "namespaces": [
+                        "*"
+                    ],
+                    "appIDs": [
+                        "*"
+                    ],
+                    "accountIDs": [
+                        "*"
+                    ],
+                    "codeRepos": [
+                        "*"
+                    ],
+                    "clusters": [
+                        "*"
+                    ],
+                    "name": "All-images",
+                    "description": "Initial monitoring - all resources collection",
+                    "system": false,
+                    "prisma": false
+                }
+            ]
+        }
+    ]
+}
