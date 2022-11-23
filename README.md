@@ -11,7 +11,7 @@ Prisma Cloud CNNS initiatives, deployment scripts and materials.
 
 The version 1.0 of the script is for a greenfield scenario. It is possible to append new firewall rules to the existing entries. It is a subject for the next release.
 
-The procedure to generate CNNF/CNNS microsegmentation rules based on Prisma Cloud observations.
+The procedure to generate CNNF/CNNS microsegmentation rules based on Prisma Cloud observations is as follows.
 
 #### Step 0. Do the backup of existing firewall rules. 
 
